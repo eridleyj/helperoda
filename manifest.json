@@ -1,0 +1,24 @@
+{
+  	"manifest_version": 2,
+  	"name": "Helper of Dragon Age",
+	"version": "0.1",
+	"permissions": [
+   		"activeTab"
+   	],
+	"content_scripts": [
+	  {
+		"matches": [
+		  "http://forums.capitalgames.com/*"
+		],
+		"css": [
+  			"/popline/popline-default.css"
+		],
+		"js": [
+			"/scripts/jquery-2.1.4.min.js",
+			"/scripts/data.js",
+			"/popline/jquery.popline.js",
+			"/popline/jquery.popline.hoda.js", 
+			"content.js"]
+	  }
+	]
+}
